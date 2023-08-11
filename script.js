@@ -144,4 +144,13 @@ function getBook(id) {
 }
 const books = getBooks();
 
-books;
+const book = getBook(2);
+
+const { publicationDate, translations, genres } = book;
+
+console.log(publicationDate, translations);
+
+const sid = genres;
+console.log(sid);
+const vishen = [...genres, "elephant"];
+console.log(vishen);
