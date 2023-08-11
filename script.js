@@ -154,3 +154,7 @@ const sid = genres;
 console.log(sid);
 const vishen = [...genres, "elephant"];
 console.log(vishen);
+
+const updatedbook = { ...book, updatedDate: "12/02/2023" };
+
+console.log(updatedbook);
