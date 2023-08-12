@@ -202,6 +202,8 @@ console.log(rajat);
 
 const adventuereBooks = books
   .filter((books) => books.genres.includes("adventure"))
+  .filter((book) => book.hasMovieAdaptation)
+  .filter((book) => book.reviews.goodreads.reviewsCount > 50000)
   .map((book) => book.title);
 
 adventuereBooks;
