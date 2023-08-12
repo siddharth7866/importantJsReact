@@ -219,3 +219,10 @@ const siddharth = books
   .map((book) => book.author);
 
 siddharth;
+
+const xyz = books
+  .filter((book) => book.pages > 650)
+  .filter((book) => book.genres.includes("fiction"))
+  .map((book) => book.title);
+
+xyz;
