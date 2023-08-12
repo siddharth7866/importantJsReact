@@ -142,9 +142,11 @@ function getBooks() {
 function getBook(id) {
   return data.find((d) => d.id === id);
 }
+
 const books = getBooks();
 
 const book = getBook(3);
+book;
 
 // const {
 //   publicationDate,
@@ -193,5 +195,13 @@ console.log(addsid(2, 5));
 const sidd = (number) => number * number;
 console.log(sidd(4));
 
-const rajat = books.filter((book) => book.pages > 500);
+const rajat = books
+  .filter((book) => book.id > 3)
+  .filter((book) => book.hasMovieAdaptation);
 console.log(rajat);
+
+const adventuereBooks = books
+  .filter((books) => books.genres.includes("adventure"))
+  .map((book) => book.title);
+
+adventuereBooks;
