@@ -207,3 +207,9 @@ const adventuereBooks = books
   .map((book) => book.title);
 
 adventuereBooks;
+
+const mapfilterLearning = books
+  .filter((books) => books.id > 2)
+  .map((book) => book.author);
+
+mapfilterLearning;
