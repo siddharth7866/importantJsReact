@@ -1,3 +1,4 @@
+/*
 const data = [
   {
     id: 1,
@@ -183,7 +184,7 @@ console.log(
 );
 console.log(hasMovieAdaptation && "This movie does not have movie adaptation");
 console.log(hasMovieAdaptation || "This movie does not have movie adaptation");
-*/
+
 
 const sid = (birthyear) => 2037 - 2023;
 console.log(sid(2001));
@@ -242,3 +243,17 @@ const cbv = [, 200, 3345, 40, 532, 62, 712, 822, 921, 1220];
 cbv.sort((a, b) => a - b);
 
 cbv;
+
+const pageSorted = books
+  .slice()
+  .sort((a, b) => b.pages - a.pages)
+  .map((book) => book.title);
+
+pageSorted;
+*/
+
+fetch("https://api.adviceslip.com/advice")
+  .then((res) => res.json())
+  .then((data) => console.log(data.slip.advice));
+
+console.log("Siddharth");
