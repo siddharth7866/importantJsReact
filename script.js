@@ -221,8 +221,8 @@ const siddharth = books
 siddharth;
 
 const xyz = books
-  .filter((book) => book.pages > 650)
-  .filter((book) => book.genres.includes("fiction"))
+  .filter((book) => book.pages > 100)
+  .filter((book) => book.genres.includes("adventure"))
   .map((book) => book.title);
 
 xyz;
