@@ -213,3 +213,9 @@ const mapfilterLearning = books
   .map((book) => book.author);
 
 mapfilterLearning;
+
+const siddharth = books
+  .filter((books) => books.id > 2)
+  .map((book) => book.author);
+
+siddharth;
