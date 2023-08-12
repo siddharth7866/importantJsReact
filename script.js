@@ -144,9 +144,21 @@ function getBook(id) {
 }
 const books = getBooks();
 
-const book = getBook(2);
+const book = getBook(3);
 
-const { publicationDate, translations, genres } = book;
+// const {
+//   publicationDate,
+//   translations,
+//   genres,
+//   pages,
+//   hasMovieAdaptation,
+//   author,
+// } = book;
+
+/*
+
+
+
 
 console.log(publicationDate, translations);
 
@@ -158,3 +170,28 @@ console.log(vishen);
 const updatedbook = { ...book, updatedDate: "12/02/2023" };
 
 console.log(updatedbook);
+const pagedetails = pages > 1000 ? "over a thousand" : "less than a thousand";
+
+pagedetails;
+
+console.log(
+  `The ${author} and this is ${
+    hasMovieAdaptation ? "" : "not"
+  } having movie adaption`
+);
+console.log(hasMovieAdaptation && "This movie does not have movie adaptation");
+console.log(hasMovieAdaptation || "This movie does not have movie adaptation");
+*/
+
+const sid = (birthyear) => 2037 - 2023;
+console.log(sid(2001));
+
+const addsid = (a, b) => a + b;
+
+console.log(addsid(2, 5));
+
+const sidd = (number) => number * number;
+console.log(sidd(4));
+
+const rajat = books.filter((book) => book.pages > 500);
+console.log(rajat);
