@@ -226,3 +226,19 @@ const xyz = books
   .map((book) => book.title);
 
 xyz;
+
+const allPages = books.reduce((acc, book) => acc + book.pages, 0);
+
+allPages;
+
+const allReviewCount = books.reduce(
+  (acc, book) => acc + book.reviews.goodreads.reviewsCount,
+  0
+);
+
+allReviewCount;
+
+const cbv = [, 200, 3345, 40, 532, 62, 712, 822, 921, 1220];
+cbv.sort((a, b) => a - b);
+
+cbv;
