@@ -416,6 +416,8 @@ const filterSid = books
   .filter((book) => book.pages > 500)
   .map((book) => book.title);
 
-const reduceSid = books.reduce(acc);
+const reduceSid = books.reduce((acc, book) => acc + book.pages, 0);
+
+reduceSid;
 
 filterSid;
