@@ -421,3 +421,22 @@ const reduceSid = books.reduce((acc, book) => acc + book.pages, 0);
 reduceSid;
 
 filterSid;
+
+const siddObj = {
+  name: "siddharth",
+  profesion: "Web Developer",
+  City: "Ahmedabad",
+};
+
+const sidArvind = {
+  EmployeeCode: 3214,
+  Project: "Arvind Upland",
+  Designation: "App Developer",
+};
+
+sidArvind;
+siddObj;
+
+const sidCombine = { ...sidArvind, siddObj };
+
+console.log(siddObj["name"]);
