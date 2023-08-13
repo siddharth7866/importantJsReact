@@ -440,3 +440,8 @@ siddObj;
 const sidCombine = { ...sidArvind, siddObj };
 
 console.log(siddObj["name"]);
+const side = `Half a number 100 is ${100 / 2}`;
+
+side;
+console.log(typeof side);
+console.log("sid" > "Rahul");
